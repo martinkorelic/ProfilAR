@@ -5,4 +5,5 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes: []
-  m_configObjects: {}
+  m_configObjects:
+    EasyAR.Settings: {fileID: 11400000, guid: 4c936dc9efb1423419056277329fd73a, type: 2}
