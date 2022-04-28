@@ -755,7 +755,7 @@ MonoBehaviour:
   SourceType: 0
   ImageFileSource:
     PathType: 1
-    Path: image01.jpg
+    Path: ProfilAR_vizitka6.png
     Name: Vizitka
     Scale: 1
   TargetDataFileSource:
