@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QRScanner.unity
     guid: 1bd650cadd3fc374db6c606b1c2e2797
+  - enabled: 1
+    path: Assets/Scenes/QRGenerator.unity
+    guid: 37cc2a38df5c70b42a26946dbbd7340c
   m_configObjects:
     EasyAR.Settings: {fileID: 11400000, guid: 4c936dc9efb1423419056277329fd73a, type: 2}
