@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class SetData : MonoBehaviour
 {
@@ -25,6 +26,11 @@ public class SetData : MonoBehaviour
     void Update()
     {
         getData();
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 
     private void getData()
