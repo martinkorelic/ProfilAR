@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 280300170}
   - component: {fileID: 280300172}
   - component: {fileID: 280300171}
+  - component: {fileID: 280300173}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -257,6 +258,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280300169}
   m_CullTransparentMesh: 1
+--- !u!114 &280300173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280300169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2efff0395eb8e394b862be0315faf75d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCard: 0
+  isScanner: 0
+  isGenerator: 0
+  isExit: 0
+  notification: {fileID: 280300171}
 --- !u!1 &402017250
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +392,7 @@ MonoBehaviour:
   isScanner: 0
   isGenerator: 1
   isExit: 0
+  notification: {fileID: 0}
 --- !u!114 &464337250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,6 +620,7 @@ MonoBehaviour:
   isScanner: 0
   isGenerator: 0
   isExit: 0
+  notification: {fileID: 0}
 --- !u!1 &685274348
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +767,7 @@ MonoBehaviour:
   isScanner: 0
   isGenerator: 0
   isExit: 1
+  notification: {fileID: 0}
 --- !u!65 &746034825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1346,6 +1367,7 @@ MonoBehaviour:
   isScanner: 1
   isGenerator: 0
   isExit: 0
+  notification: {fileID: 0}
 --- !u!1 &2079129657
 GameObject:
   m_ObjectHideFlags: 0
