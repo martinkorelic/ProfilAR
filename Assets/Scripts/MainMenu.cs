@@ -16,6 +16,8 @@ public class MainMenu : MonoBehaviour
             SceneManager.LoadScene("SampleScene");
         if (isScanner)
             SceneManager.LoadScene("QRScanner");
+        if (isGenerator)
+            SceneManager.LoadScene("QRGenerator");
         if (isExit)
             Application.Quit();
     }
