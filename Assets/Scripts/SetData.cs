@@ -15,6 +15,9 @@ public class SetData : MonoBehaviour
     public MeshFilter astro;
     public TextMeshPro interesi;
 
+    public Mesh[] astrologySigns;
+
+    private string[] astrologies = {"aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"};
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +47,7 @@ public class SetData : MonoBehaviour
         string username = data[2];
         string interests = data[3];
         string color = data[4];
+        string astrosign = data[5].ToLower();
 
         DateTime date;
         if (!DateTime.TryParse(birthday, out date)) return;
@@ -89,6 +93,16 @@ public class SetData : MonoBehaviour
                 textColor = Color.black;
                 break;
         }
+
+        int meshSign = 0; 
+        for (int i = 0; i < astrologies.Length; i++) {
+            if (astrosign.Equals(astrologies[i])) {
+                meshSign = i;
+                break;
+            }
+        }
+
+        astro.mesh = astrologySigns[meshSign];
 
         ime.text = imeText;
         ime.color = textColor;
