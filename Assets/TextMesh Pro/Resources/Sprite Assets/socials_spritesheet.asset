@@ -1,0 +1,332 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &-6820151564924556699
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextMeshPro/Sprite
+  m_Shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e97541512d8c6b04c94d21dba7f4a506, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _CullMode: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
+  m_Name: socials_spritesheet
+  m_EditorClassIdentifier: 
+  hashCode: 1255722050
+  material: {fileID: -6820151564924556699}
+  materialHashCode: 0
+  m_Version: 1.1.0
+  m_FaceInfo:
+    m_FaceIndex: 0
+    m_FamilyName: 
+    m_StyleName: 
+    m_PointSize: 0
+    m_Scale: 0
+    m_LineHeight: 0
+    m_AscentLine: 0
+    m_CapLine: 0
+    m_MeanLine: 0
+    m_Baseline: 0
+    m_DescentLine: 0
+    m_SuperscriptOffset: 0
+    m_SuperscriptSize: 0
+    m_SubscriptOffset: 0
+    m_SubscriptSize: 0
+    m_UnderlineOffset: 0
+    m_UnderlineThickness: 0
+    m_StrikethroughOffset: 0
+    m_StrikethroughThickness: 0
+    m_TabWidth: 0
+  spriteSheet: {fileID: 2800000, guid: e97541512d8c6b04c94d21dba7f4a506, type: 3}
+  m_SpriteCharacterTable:
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 0
+    m_Scale: 1
+    m_Name: icons8-discord-new-160
+    m_HashCode: 804649442
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 1
+    m_Scale: 1
+    m_Name: icons8-facebook-160
+    m_HashCode: -354263809
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 2
+    m_Scale: 1
+    m_Name: icons8-github-160
+    m_HashCode: -907473998
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 4
+    m_Scale: 1
+    m_Name: icons8-pinterest-160
+    m_HashCode: 1730429985
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 3
+    m_Scale: 1
+    m_Name: icons8-linkedin-160
+    m_HashCode: -1764998863
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 5
+    m_Scale: 1
+    m_Name: icons8-reddit-160
+    m_HashCode: -1170823779
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 6
+    m_Scale: 1
+    m_Name: icons8-telegram-app-160
+    m_HashCode: 169739546
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 7
+    m_Scale: 1
+    m_Name: icons8-tiktok-160
+    m_HashCode: 1266884849
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 8
+    m_Scale: 1
+    m_Name: icons8-tinder-160
+    m_HashCode: -404235753
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 9
+    m_Scale: 1
+    m_Name: icons8-twitter-160
+    m_HashCode: -1775754902
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 10
+    m_Scale: 1
+    m_Name: icons8-whatsapp-160
+    m_HashCode: -838370673
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 11
+    m_Scale: 1
+    m_Name: icons8-youtube-160
+    m_HashCode: 1510811730
+  m_SpriteGlyphTable:
+  - m_Index: 0
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: -1
+      m_Y: 334
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 1
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 125
+      m_Y: 329
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 2
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 253
+      m_Y: 333
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 3
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 0
+      m_Y: 160
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 4
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 381
+      m_Y: 345
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 5
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 124
+      m_Y: 160
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 6
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 263
+      m_Y: 164
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 7
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 388
+      m_Y: 167
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 8
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 513
+      m_Y: 0
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 9
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 641
+      m_Y: 510
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 10
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 243
+      m_Y: -7
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 11
+    m_Metrics:
+      m_Width: 160
+      m_Height: 160
+      m_HorizontalBearingX: -0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 160
+    m_GlyphRect:
+      m_X: 886
+      m_Y: 0
+      m_Width: 126
+      m_Height: 167
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  spriteInfoList: []
+  fallbackSpriteAssets: []
