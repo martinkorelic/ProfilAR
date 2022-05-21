@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.iOS;
 
 public class SetData : MonoBehaviour
 {
@@ -13,8 +14,11 @@ public class SetData : MonoBehaviour
     public TextMesh starost;
     public TextMesh userTag;
     public MeshFilter astro;
-    public TextMeshPro interesi;
-
+    //public TextMeshPro interesi;
+    public TextMeshPro osebnost;
+    public TextMeshPro sport;
+    public TextMeshPro animal;
+    public TextMeshPro social; 
     public Mesh[] astrologySigns;
 
     private string[] astrologies = {"aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"};
@@ -29,6 +33,24 @@ public class SetData : MonoBehaviour
     void Update()
     {
         getData();
+
+        if (Input.GetMouseButtonUp(0)) {
+            Debug.Log("Button 0");
+        }
+
+        if (Input.touchCount > 0) {
+            Touch touch = Input.GetTouch(0);
+            Debug.Log(touch.phase);
+        }
+
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.phase != TouchPhase.Ended && touch.phase != TouchPhase.Canceled)
+            {
+                // Trigger
+                Debug.Log("idjwid");
+            }
+        }
     }
 
     public void Back()
@@ -41,13 +63,23 @@ public class SetData : MonoBehaviour
         string qrText = CardDataController.QRText;
         if (qrText == "") return;
         string[] data = qrText.Split(';');
-        if (data.Length < 5) return;
+        if (data.Length < 10) return;
         string imeText = data[0];
         string birthday = data[1];
         string username = data[2];
         string interests = data[3];
         string color = data[4];
         string astrosign = data[5].ToLower();
+
+        string animalText = $"<sprite=\"animal_spritesheet\" index={data[6]}>";
+        string osebnostText = $"<sprite=\"osebnost_spritesheet\" index={data[7]}>";
+        string socialText = $"<sprite=\"socials_spritesheet\" index={data[8]}>";
+        string sportText = $"<sprite=\"sport_spritesheet\" index={data[9]}>";
+
+        animal.text = animalText;
+        osebnost.text = osebnostText;
+        social.text = socialText;
+        sport.text = sportText;
 
         DateTime date;
         if (!DateTime.TryParse(birthday, out date)) return;
@@ -113,7 +145,7 @@ public class SetData : MonoBehaviour
         userTag.text = tagText;
         userTag.color = textColor;
 
-        interesi.text = interestsText;
-        interesi.color = textColor;
+        //interesi.text = interestsText;
+        //interesi.color = textColor;
     }
 }
