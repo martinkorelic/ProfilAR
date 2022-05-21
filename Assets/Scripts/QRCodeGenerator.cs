@@ -19,6 +19,11 @@ public class QRCodeGenerator : MonoBehaviour
     public TMP_InputField interests;
     public TMP_Dropdown color;
     public TMP_Dropdown astrosign;
+    public TMP_Dropdown animal;
+    public TMP_Dropdown osebnost;
+    public TMP_Dropdown social;
+    public TMP_Dropdown sport;
+
     public TMP_Text notification;
 
     private Texture2D encodedTexture;
@@ -92,7 +97,7 @@ public class QRCodeGenerator : MonoBehaviour
             return;
         }
 
-        string textWrite = nameText + ";" + result.ToShortDateString() + ";" + userText + ";" + interestsText + ";" + colorText + ";" + astroText;
+        string textWrite = $"{nameText};{result.ToShortDateString()};{userText};{interestsText};{colorText};{astroText};{animal.value};{osebnost.value};{social.value};{sport.value}";
 
         CardDataController.QRText = textWrite;
 
