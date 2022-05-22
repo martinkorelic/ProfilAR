@@ -21,6 +21,16 @@ public class SetData : MonoBehaviour
     public TextMeshPro social; 
     public Mesh[] astrologySigns;
 
+    public TextMeshPro osebnostPopupText;
+    public TextMeshPro sportPopupText;
+    public TextMeshPro animalPopupText;
+    public TextMeshPro socialPopopText;
+
+    public Animator osebnostPopAnim;
+    public Animator sportPopAnim;
+    public Animator animalPopAnim;
+    public Animator socialPopAnim;
+
     private string[] astrologies = {"aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"};
 
     // Start is called before the first frame update
@@ -35,7 +45,14 @@ public class SetData : MonoBehaviour
         getData();
 
         if (Input.GetMouseButtonUp(0)) {
-            Debug.Log("Button 0");
+            //Debug.Log("Button 0");
+            //osebnostPopup.SetActive(true);
+            //osebnostPopAnim.Play("Base Layer");
+            osebnostPopAnim.SetTrigger("Active");
+            sportPopAnim.SetTrigger("Active");
+            animalPopAnim.SetTrigger("Active");
+            socialPopAnim.SetTrigger("Active");
+
         }
 
         if (Input.touchCount > 0) {
@@ -43,6 +60,7 @@ public class SetData : MonoBehaviour
             Debug.Log(touch.phase);
         }
 
+        /*
         foreach (Touch touch in Input.touches)
         {
             if (touch.phase != TouchPhase.Ended && touch.phase != TouchPhase.Canceled)
@@ -50,7 +68,7 @@ public class SetData : MonoBehaviour
                 // Trigger
                 Debug.Log("idjwid");
             }
-        }
+        }*/
     }
 
     public void Back()
@@ -99,6 +117,8 @@ public class SetData : MonoBehaviour
             interes = char.ToUpper(interes[0]) + interes.Substring(1) + "\n";
             interestsText += interes;
         }
+
+        // TODO: Set popup text
 
         Color textColor;
         switch (color.ToLower())
