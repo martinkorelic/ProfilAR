@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="/Assets/Styles/button.uss" />
+    <ui:VisualElement style="height: 100%;">
+        <ui:Label text="Generate your&#10;personal card" display-tooltip-when-elided="true" style="height: 15%; font-size: 25px; -unity-text-align: middle-center; color: rgb(80, 205, 226); -unity-font-style: bold; margin-top: 10px;" />
+        <ui:VisualElement name="panelPersonal" style="height: 65%;">
+            <ui:Label text="Personal data" display-tooltip-when-elided="true" style="height: auto; font-size: 20px; -unity-text-align: middle-center; color: rgb(80, 205, 226); -unity-font-style: bold;" />
+            <ui:TextField picking-mode="Ignore" label="Ime in Priimek" text="Janez Novak" max-length="30" multiline="false" name="name" style="flex-direction: column;" />
+            <ui:TextField picking-mode="Ignore" label="Rojstni dan" text="05/10/2000" max-length="30" tabindex="1" name="date" style="flex-direction: column;" />
+            <ui:TextField picking-mode="Ignore" label="Vzdevek" text="Janez" password="false" max-length="30" tabindex="2" name="nick" style="flex-direction: column;" />
+            <ui:TextField picking-mode="Ignore" label="Interesi" text="Meditacija" max-length="30" tabindex="3" name="interes" style="flex-direction: column;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="panelIcon" style="height: 65%; display: none;">
+            <ui:Label text="Icons" display-tooltip-when-elided="true" style="height: auto; font-size: 20px; -unity-text-align: middle-center; color: rgb(80, 205, 226); -unity-font-style: bold;" />
+            <ui:VisualElement style="flex-direction: row; -unity-text-align: upper-center; align-items: stretch; justify-content: center;">
+                <ui:Button text="&lt;" display-tooltip-when-elided="true" name="minus-button" class="button" style="height: auto; width: 20%;" />
+                <ui:VisualElement name="icon" style="width: 100px; height: 100px; background-image: resource(&apos;Sprites/animal/0&apos;); margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;" />
+                <ui:Button text="&gt;" display-tooltip-when-elided="true" name="plus-button" class="button" style="width: 20%; height: auto;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="panelqr" style="height: 65%; display: none;">
+            <ui:Label text="Generated QR" display-tooltip-when-elided="true" style="height: auto; font-size: 20px; -unity-text-align: middle-center; color: rgb(80, 205, 226); -unity-font-style: bold;" />
+            <ui:VisualElement style="flex-direction: row; -unity-text-align: upper-center; align-items: stretch; justify-content: center;">
+                <ui:VisualElement name="qr" style="width: 250px; height: 250px; background-image: none; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView>
+            <ui:IMGUIContainer />
+        </ui:ScrollView>
+        <ui:VisualElement style="height: 20%; -unity-text-align: middle-center; justify-content: center; align-items: center;">
+            <ui:Button text="Next" display-tooltip-when-elided="true" name="next-button" class="button" />
+            <ui:Button text="Cancel" display-tooltip-when-elided="true" name="back-button" class="button" style="-unity-text-align: middle-center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

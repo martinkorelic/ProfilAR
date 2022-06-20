@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,11 +24,14 @@ public class QRCodeScanner : MonoBehaviour
     private bool isCamAvailable;
     private WebCamTexture cameraTexture;
 
+    private bool isMobileCamera;
+
     // Start is called before the first frame update
     void Start()
     {
         SetupCamera();
         textOut.text = CardDataController.QRText;
+        InvokeRepeating("Scan", 1f, 1f);  //1s delay, repeat every 1s
     }
 
     // Update is called once per frame
@@ -52,7 +56,9 @@ public class QRCodeScanner : MonoBehaviour
                 cameraTexture = new WebCamTexture(devices[i].name, (int)scanZone.rect.width, (int)scanZone.rect.height);
             if (devices[i].isFrontFacing == false)
             {
+                isMobileCamera = true;
                 cameraTexture = new WebCamTexture(devices[i].name, (int)scanZone.rect.width, (int)scanZone.rect.height);
+                break;
             }
         }
         //Debug.Log("Camera texture name:" + cameraTexture.name);
@@ -69,6 +75,10 @@ public class QRCodeScanner : MonoBehaviour
 
         int orientation = -cameraTexture.videoRotationAngle;
         rawImageBackground.rectTransform.localEulerAngles = new Vector3(0, 0, orientation);
+
+        if (isMobileCamera) {
+            rawImageBackground.rectTransform.localScale = new Vector3(1, -1, 1);
+        }
     }
 
     private void Scan()
@@ -79,26 +89,20 @@ public class QRCodeScanner : MonoBehaviour
             Result result = barcodeReader.Decode(cameraTexture.GetPixels32(), cameraTexture.width, cameraTexture.height);
             if (result != null)
             {
-                textOut.text = result.Text;
+                Debug.Log("Got em");
+                //textOut.text = result.Text;
                 CardDataController.QRText = result.Text;
+                SceneManager.LoadScene("SampleScene");
             }
 
-            else textOut.text = "Failed to read QR Code";
-        } catch
+            else {
+                Debug.Log("No data detected");
+                //textOut.text = "Failed to read QR Code";   
+            }
+        } catch (Exception e)
         {
-            textOut.text = "Failed in try";
+            Debug.Log(e.Message);
+            textOut.text = "Unexpected error occured";
         }
     }
-
-    public void OncClickScan()
-    {
-        Scan();
-    }
-
-    public void Back()
-    {
-        cameraTexture.Stop();
-        SceneManager.LoadScene("StartScene");
-    }
-
 }

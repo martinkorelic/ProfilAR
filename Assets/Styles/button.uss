@@ -1,0 +1,77 @@
+.button {
+    height: 30%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    top: auto;
+    left: auto;
+    right: auto;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    width: 80%;
+    position: relative;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(98, 198, 224);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    margin-top: 10px;
+}
+
+.button:hover {
+    height: 30%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    top: auto;
+    left: auto;
+    right: auto;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    width: 80%;
+    position: relative;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(32, 152, 183);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    margin-top: 10px;
+}
+
+.button:active {
+    height: 30%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    top: auto;
+    left: auto;
+    right: auto;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    width: 80%;
+    position: relative;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(36, 122, 144);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    margin-top: 10px;
+}

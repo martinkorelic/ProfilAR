@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="/Assets/Styles/button.uss" />
+    <ui:VisualElement style="height: 100%; flex-direction: column; justify-content: flex-start; width: 100%;">
+        <ui:Label text="Profil AR" display-tooltip-when-elided="true" style="height: 195px; font-size: 40px; -unity-text-align: middle-center; color: rgb(80, 205, 226); -unity-font-style: bold;" />
+        <ui:VisualElement style="height: 1700px; flex-shrink: 1; justify-content: flex-start; align-items: center;">
+            <ui:Button text="Scan card" display-tooltip-when-elided="true" name="scan-button" class="button" />
+            <ui:Button text="Generate card" display-tooltip-when-elided="true" name="generate-button" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

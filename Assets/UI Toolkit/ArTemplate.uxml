@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="/Assets/Styles/button.uss" />
+    <ui:VisualElement style="height: 100%; flex-direction: column; justify-content: flex-start; width: 100%;">
+        <ui:Label text="Scan the card" display-tooltip-when-elided="true" name="Label" style="height: 20%; font-size: 20px; -unity-text-align: middle-center; color: rgb(80, 205, 226); -unity-font-style: bold;" />
+        <ui:VisualElement style="height: 60%;" />
+        <ui:VisualElement style="height: 20%; flex-shrink: 1; justify-content: center; align-items: center;">
+            <ui:Button text="Cancel" display-tooltip-when-elided="true" name="back-button" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

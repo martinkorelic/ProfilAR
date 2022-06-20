@@ -95,6 +95,12 @@ MonoBehaviour:
     m_HashCode: 57191139
   - m_ElementType: 2
     m_Unicode: 65534
+    m_GlyphIndex: 11
+    m_Scale: 1
+    m_Name: 265f-fe0f
+    m_HashCode: -990897169
+  - m_ElementType: 2
+    m_Unicode: 65534
     m_GlyphIndex: 3
     m_Scale: 1
     m_Name: 1f3bf
@@ -125,12 +131,6 @@ MonoBehaviour:
     m_HashCode: -1160872355
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 8
-    m_Scale: 1
-    m_Name: 1f3d2
-    m_HashCode: 57190898
-  - m_ElementType: 2
-    m_Unicode: 65534
     m_GlyphIndex: 9
     m_Scale: 1
     m_Name: 1f3d3
@@ -143,10 +143,10 @@ MonoBehaviour:
     m_HashCode: 57200248
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 11
+    m_GlyphIndex: 8
     m_Scale: 1
-    m_Name: 265f-fe0f
-    m_HashCode: -990897169
+    m_Name: 1f3d2
+    m_HashCode: 57190898
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
